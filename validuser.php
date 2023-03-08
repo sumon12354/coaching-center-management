@@ -1,0 +1,9 @@
+<?php
+session_start();
+$accept=$_SESSION['ruha'];
+if($accept=="dear"){
+    echo"";
+}else{
+    header("Location:index.php");
+}
+?>

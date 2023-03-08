@@ -1,0 +1,4 @@
+CREATE VIEW collectionView AS
+	SELECT collectionfee.collid, student.studentname, collectionfee.colldate, collectionfee.collamount, collectionfee.collnote
+    FROM collectionfee, student
+    WHERE collectionfee.sid = student.sid
